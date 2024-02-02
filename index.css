@@ -1,0 +1,126 @@
+h1 {
+    color: #2b2b2b;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 25px;
+  }
+
+
+  .ship_1 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -webkit-animation: boatAnimation 100s infinite;
+            animation: boatAnimation 100s infinite;
+  }
+  
+  .titanic-image {
+    width: 20vw;
+    margin: 15px;
+  }
+  @-webkit-keyframes boatAnimation {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    101% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes boatAnimation {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    101% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+
+  /*1st line graphs
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.section_1 {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.graph-container {
+    background-color: antiquewhite;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.graph {
+    width: 30vw;
+    height: 45vh;
+    border: 1px solid #ccc;
+}
+
+.graph:hover {
+    transform: scale(1.25);
+}
+
+
+
+body.modal-open {
+    overflow: hidden;
+}
+
+#modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(181, 181, 182, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#modal {
+    position: relative;
+    z-index: 1001;
+}
+
+#modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+body.modal-open #modal-overlay {
+    display: flex;
+}
